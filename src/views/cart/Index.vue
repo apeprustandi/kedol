@@ -32,7 +32,7 @@ export default {
   methods: {
     async removeFromCart(product) {
       await axios.delete(
-        `http://localhost:8000/api/orders/delete/user/2/product/${product}`
+        `https://api.cibinong.online/api/orders/delete/user/2/product/${product}`
       )
       let cart = this.cartItems.map(function(item) { 
         return item.code
@@ -49,7 +49,7 @@ export default {
     }
   },
   async created() {
-    const result = await axios.get('http://localhost:8000/api/orders/user/2')
+    const result = await axios.get('https://api.cibinong.online/api/orders/user/2')
     let data = Object.assign({}, 
       ...(result.data.map(
           result => ({ 
