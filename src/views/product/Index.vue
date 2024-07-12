@@ -28,7 +28,7 @@ export default {
       }
   },
   async created() {
-    const result = await axios.get('http://localhost:8000/api/products')
+    const result = await axios.get('https://api.cibinong.online/api/products')
     this.products = result.data
   }
 }
