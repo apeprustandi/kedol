@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     async addToCart () {
-      await axios.post('http://localhost:8000/api/orders/update/user/2', {
+      await axios.post('https://api.cibinong.online/api/orders/update/user/2', {
         product: this.$route.params.id
       })
       this.notif = true
@@ -43,7 +43,7 @@ export default {
   },
   async created() {
     const code = this.$route.params.id
-    const result = await axios.get(`http://localhost:8000/api/products/${code}`)
+    const result = await axios.get(`https://api.cibinong.online/api/products/${code}`)
     this.product = result.data
   }
 }
