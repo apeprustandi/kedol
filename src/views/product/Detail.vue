@@ -3,7 +3,7 @@
       <div id="page-wrap" v-if="product">
         <h4 v-if="notif" class="notif">item added successfully</h4>
         <div id="img-wrap">
-          <img :src="`http://localhost:8000${product.imageUrl}`" alt="">
+          <img :src="`https://api.cibinong.online${product.imageUrl}`" alt="">
         </div>
         <div id="product-details">
           <h1>{{ product.name }}</h1>
