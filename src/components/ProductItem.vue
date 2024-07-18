@@ -27,24 +27,39 @@ export default {
     margin-bottom: 2%;
     padding: 20px;
     position: relative;
-    width: 32%;
-  }
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+}
 
-  .product-name {
+.product-name {
     margin-bottom: 0;
-  }
+}
 
-  img {
-    height: 200px;
-    width: 200px;
+img {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
     border-radius: 5%;
-  }
+}
 
-  a {
+a {
     width: 100%;
-  }
+}
 
-  button {
+button {
     width: 100%;
-  }
+}
+
+@media (min-width: 768px) {
+    .product-item {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-item {
+        width: 32%;
+    }
+}
 </style>
