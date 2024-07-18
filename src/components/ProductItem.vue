@@ -51,6 +51,12 @@ button {
     width: 100%;
 }
 
+@media (max-width: 767px) {
+    .product-item {
+        width: 100%;
+    }
+}
+
 @media (min-width: 768px) {
     .product-item {
         width: 48%;
